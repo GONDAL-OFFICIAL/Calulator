@@ -8,6 +8,7 @@ function addNumbers() {
   lastResult = sum;
 
   document.getElementById("result").innerText = "The sum is: " + sum;
+  document.getElementById("secresult").innerText = sum;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -20,6 +21,7 @@ function subNumbers() {
   lastResult = sub;
 
   document.getElementById("result").innerText = "The difference is: " + sub;
+  document.getElementById("secresult").innerText = sub;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -32,6 +34,7 @@ function mulNumbers() {
   lastResult = mul;
 
   document.getElementById("result").innerText = "The product is: " + mul;
+  document.getElementById("secresult").innerText = mul;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -49,6 +52,7 @@ function divNumbers() {
   lastResult = div;
 
   document.getElementById("result").innerText = "The quotient is: " + div;
+  document.getElementById("secresult").innerText = div;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -60,7 +64,9 @@ function povNumbers() {
   let pov = Number(n1) ** Number(n2);
   lastResult = pov;
 
-  document.getElementById("result").innerText = "The power of " + Number(n1) + " and " + Number(n2) + " is: " + pov;
+  document.getElementById("result").innerText =
+    "The power of " + Number(n1) + " and " + Number(n2) + " is: " + pov;
+  document.getElementById("secresult").innerText = pov;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -72,7 +78,9 @@ function rootNumbers() {
   let root = Number(n1) ** (1 / Number(n2));
   lastResult = root;
 
-  document.getElementById("result").innerText = "The root of " + Number(n1) + " and " + Number(n2) + " is: " + root;
+  document.getElementById("result").innerText =
+    "The root of " + Number(n1) + " and " + Number(n2) + " is: " + root;
+  document.getElementById("secresult").innerText = root;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -81,15 +89,20 @@ function modulusNumbers() {
   let n1 = document.getElementById("num1").value;
   let n2 = document.getElementById("num2").value;
 
-  let modulus = Number(n1) % Number(n2) 
+  let modulus = Number(n1) % Number(n2);
   lastResult = modulus;
 
   if (modulus == 0) {
-    document.getElementById("result").innerText = Number(n1) + " is multiple of " + Number(n2);
+    document.getElementById("result").innerText =
+      Number(n1) + " is multiple of " + Number(n2);
+    document.getElementById("secresult").innerText = "TRUE";
   } else {
-    document.getElementById("result").innerText = Number(n1) + " is not multiple of " + Number(n2);
+    document.getElementById("result").innerText =
+      Number(n1) + " is not multiple of " + Number(n2);
+    document.getElementById("secresult").innerText = "FALSE";
   }
 
+  document.getElementById("continueBtn").style.display = "none";
 }
 
 function avgNumbers() {
@@ -100,6 +113,7 @@ function avgNumbers() {
   lastResult = avg;
 
   document.getElementById("result").innerText = "The average is: " + avg;
+  document.getElementById("secresult").innerText = avg;
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }
@@ -111,7 +125,15 @@ function percentageNumbers() {
   let perc = (Number(n1) / Number(n2)) * 100;
   lastResult = perc;
 
-  document.getElementById("result").innerText = "The percentage of " + Number(n1) + " out of " + Number(n2) + " is: " + perc + "%";
+  document.getElementById("result").innerText =
+    "The percentage of " +
+    Number(n1) +
+    " out of " +
+    Number(n2) +
+    " is: " +
+    perc +
+    "%";
+  document.getElementById("secresult").innerText = perc + "%";
 
   document.getElementById("continueBtn").style.display = "inline-block";
 }

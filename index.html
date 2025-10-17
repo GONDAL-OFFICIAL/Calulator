@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Henny+Penny&family=Micro+5+Charted&family=Nosifer&family=Silkscreen:wght@400;700&family=Stalinist+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>ALI  GONDAL CALCULATOR</h1>
     <input id="num1" class="inputNumbers" type ="number" placeholder ="Type First Number: "></input>
     <br></br>
+    <button onclick="rootNumbers()">ROOT OF</button>
+    <button onclick="povNumbers()">POWER OF</button>
+    <button onclick="modulusNumbers()">MULTIPLE OF</button>
+    <button onclick="percentageNumbers()">PERCENTAGE OF</button>
+    <br></br>
     <input id="num2" class="inputNumbers" type ="number" placeholder ="Type Second Number: "></input>
     <br></br>
     <button onclick="addNumbers()">ADD</button>
     <button onclick="divNumbers()">DIVIDE</button>
-    <button onclick="mulNumbers()">MULTIPLY</button>
     <button onclick="avgNumbers()">AVERAGE</button>
+    <button onclick="mulNumbers()">MULTIPLY</button>
     <button onclick="subNumbers()">SUBTRACT</button>
-    <button onclick="rootNumbers()">N0.1 ROOT OF NO.2</button>
-    <button onclick="povNumbers()">N0.1 POWER OF NO.2</button>
-    <button onclick="modulusNumbers()">N0.1 MULTIPLE OF NO.2</button>
-    <button onclick="percentageNumbers()">PERCENTAGE OF NO.1 BY NO.2</button>
 
     <br></br>
     <p id="result"></p>
@@ -28,7 +34,7 @@
     <button id="continueBtn" onclick="continueCalc()">Continue</button>
 
     <div class="calculator">
-  <div class="calc-screen">12345</div>
+  <div class="calc-screen"><p id="secresult"></p></div>
   <div class="calc-buttons">
     <div>7</div><div>8</div><div>9</div><div>/</div>
     <div>4</div><div>5</div><div>6</div><div>*</div>
