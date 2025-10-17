@@ -95,6 +95,13 @@ input[type="number"]:focus {
   transform: scale(1.1);
 }
 
+/* Remove arrows (spinners) from number inputs */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* === BUTTONS === */
 button {
   background: linear-gradient(90deg, #330000, #000066);
