@@ -123,8 +123,9 @@ button:active {
   margin-top: 8px;
   font-size: 1.8em;
   color: #00ffe0;
-  font-family: "Henny Penny", system-ui;
+  font-family: "Ruslan Display", sans-serif;
   font-weight: 400;
+  font-style: normal;
   text-shadow: 0 0 12px #ff6600, 0 0 30px #ff3300, 0 0 50px #ff2200;
   animation: fadeInUp 1.8s ease forwards;
 }
